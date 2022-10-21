@@ -10,22 +10,16 @@ public class ResultPage extends BasePage {
         super(driver);
     }
 
-
-
     By movieTitle = By.partialLinkText("The Circus");
 
-    By getMovieTitle = By.xpath("//a[@href=\"/title/tt0018773/?ref_=fn_al_tt_2\"]");
+    By movieTitle2 = By.partialLinkText("The Jazz Singer");
 
-
-
-
-
-
-    public void selectMovie(String string) {
-        if (isDisplayed(getMovieTitle)){
-            click(getMovieTitle);
-        }
+    public void selectMovie() {
         click(movieTitle);
+    }
+
+    public void selectmovie2() {
+        click(movieTitle2);
     }
 
 }

@@ -16,27 +16,19 @@ public class PhotoPage extends BasePage {
         super(driver);
     }
 
+    By nextButton = By.cssSelector("#media_index_content > div:nth-of-type(3) .prevnext");
 
+    By photoTitle = By.xpath("//*[@class='ipc-title__text' and contains(text(), 'Photos')]");
 
-
-   // @FindBy (xpath = "#main > div:nth-of-type(1)")
-  //  WebElement imgFrame;
-
-    By imgFrame= By.xpath("#main > div:nth-of-type(1)");
-
-    private List<WebElement> getAllProducts(){
-        return findAll(imgFrame);
+    public void clickPhotoLink() {
+        click(photoTitle);
     }
 
+    public PhotoPage checkPage1() throws IOException {
 
-
-    public PhotoPage checkPhotoLink(int k) throws IOException {
-        getAllProducts().get(k).click();
-
-
-        List<WebElement> images = getAllProducts();
+        List<WebElement> images = driver.findElements(By.tagName("img"));
         System.out.println("Total images: " + images.size());
-        for(int i=0; i<images.size(); i++) {
+        for (int i = 0; i < images.size(); i++) {
             WebElement element = images.get(i);
             String url = element.getAttribute("src");
             URL link = new URL(url);
@@ -44,16 +36,17 @@ public class PhotoPage extends BasePage {
             httpCon.connect();
 
             int rescode = httpCon.getResponseCode();
-            if(rescode >= 400) {
+            if (rescode >= 400) {
                 System.out.println(url + "-" + "is broken link");
-            }
-            else {
+            } else {
                 System.out.println(url + "-" + "is valid link");
             }
         }
-
         return this;
-
-
     }
+
+    public void clickNextButton() {
+        click(nextButton);
+    }
+
 }

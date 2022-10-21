@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json"
         },
-        features = {"src/test/resources/features/A.feature"},
+        features = {"src/test/resources/features/IMDB.feature"},
         glue = {"StepDefinitions"}
 
 )

@@ -13,31 +13,32 @@ public class HomePage extends BasePage {
     }
 
 
-    By searchBox =By.id("suggestion-search");
+    By searchBox = By.id("suggestion-search");
 
+    By searchButton = By.id("suggestion-search-button");
 
-    By searchButton =By.id("suggestion-search-button");
+    By menu = By.id("imdbHeader-navDrawerOpen--desktop");
 
-    By menu= By.id("imdbHeader-navDrawerOpen--desktop");
-
-
-
-
+    By imdbButton = By.id("home_img_holder");
 
 
     public void writeMovieName(String txt) {
-        write(searchBox,txt);
+        write(searchBox, txt);
     }
 
 
-    public void ClickMenu(){
+    public void ClickMenu() {
         click(menu);
     }
-    public void ClickSearhButton(){
-        click(searchButton);
 
+    public void ClickSearchButton() {
+        click(searchButton);
     }
 
+    public void clickImdbButton() throws InterruptedException {
+        click(imdbButton);
+        Thread.sleep(2000);
+    }
 
 
 }

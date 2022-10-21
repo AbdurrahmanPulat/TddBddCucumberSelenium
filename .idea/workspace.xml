@@ -5,27 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069bacf7-9ce3-4d8b-bf2e-719ef58315c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/AwardsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/NewTheCircusPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/OscarPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/PhotoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/ResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/TheCircusPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/TheJazzSingerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pom/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Imdb_Steps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/A.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/IMDB.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/AwardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/AwardsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/NewTheCircusPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/OscarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/OscarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/PhotoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/PhotoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/TheCircusPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/TheCircusPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/Page/TheJazzSingerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/Page/TheJazzSingerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pom/base/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Imdb_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Imdb_Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/A.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/A.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: A">
+  <component name="RunManager" selected="Cucumber Java.Scenario: check The Circus information and whether photos have been opened (1)">
     <configuration name="Feature: A" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/A.feature" />
@@ -94,18 +87,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: SA" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SA.FEATURE" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+    <configuration name="Scenario: check The Circus information and whether photos have been opened (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/IMDB.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CUCUMBER" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: SA" />
+      <option name="NAME_FILTER" value="^check The Circus information and whether photos have been opened$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^check The Circus information and whether photos have been opened$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: check The Circus information and whether photos have been opened" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,20 +106,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: check movie information and whether photos have been opened" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+    <configuration name="Scenario: check The Circus information and whether photos have been opened" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/A.feature" />
       <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CUCUMBER" />
-      <option name="NAME_FILTER" value="^check movie information and whether photos have been opened$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^check movie information and whether photos have been opened$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: check movie information and whether photos have been opened" />
+      <option name="NAME_FILTER" value="^check The Circus information and whether photos have been opened$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^check The Circus information and whether photos have been opened$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: check The Circus information and whether photos have been opened" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/Java/CUCUMBER/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: check The Jazz Singer information and whether photos have been opened" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/A.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CUCUMBER" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
+      <option name="NAME_FILTER" value="^check The Jazz Singer information and whether photos have been opened$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^check The Jazz Singer information and whether photos have been opened$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: check The Jazz Singer information and whether photos have been opened" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,19 +164,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Scenario: check The Circus information and whether photos have been opened" />
+      <item itemvalue="Cucumber Java.Scenario: check The Circus information and whether photos have been opened (1)" />
+      <item itemvalue="Cucumber Java.Scenario: check The Jazz Singer information and whether photos have been opened" />
       <item itemvalue="Cucumber Java.Feature: A" />
-      <item itemvalue="Cucumber Java.Feature: SA" />
-      <item itemvalue="Cucumber Java.Scenario: check movie information and whether photos have been opened" />
-      <item itemvalue="TestNG.D:/Java/CUCUMBER/testng.xml" />
       <item itemvalue="TestNG.TestRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: check The Circus information and whether photos have been opened (1)" />
         <item itemvalue="Cucumber Java.Feature: A" />
-        <item itemvalue="Cucumber Java.Scenario: check movie information and whether photos have been opened" />
-        <item itemvalue="TestNG.D:/Java/CUCUMBER/testng.xml" />
+        <item itemvalue="Cucumber Java.Scenario: check The Jazz Singer information and whether photos have been opened" />
+        <item itemvalue="Cucumber Java.Scenario: check The Circus information and whether photos have been opened" />
         <item itemvalue="TestNG.TestRunner" />
-        <item itemvalue="Cucumber Java.Feature: SA" />
       </list>
     </recent_temporary>
   </component>
