@@ -18,7 +18,7 @@ public class ResultPage extends BasePage {
         click(movieTitle);
     }
 
-    public void selectmovie2() {
+    public void selectMovie2() {
         click(movieTitle2);
     }
 

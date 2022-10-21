@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         plugin = {"pretty",
-                "html:target/cucumber-reports/cucumber.html",
+                "html:target/cucumber-reports/cucumber.html/index.html",
                 "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features/IMDB.feature"},

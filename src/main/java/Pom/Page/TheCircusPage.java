@@ -20,6 +20,7 @@ public class TheCircusPage extends BasePage {
 
     public TheCircusPage saveDirectorsInfoText() {
         type(directorInfoText);
+
         return this;
     }
 
