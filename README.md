@@ -25,6 +25,8 @@ https://user-images.githubusercontent.com/57863133/197215721-bf885a8d-b35a-4645-
   * [Steps The Circus Movie](#Steps-The-Circus-Movie)
   * [Steps The Jazz Singer Movie](#Steps-The-Jazz-Singer-Movie)
   * [Imdb_Steps Class](#Imdb_Steps-Class)
+  * [TheCircus_Steps Class](#TheCirsus_Steps-Class)
+  * [TheJazzSinger_Steps Class](#TheJazzSinger_Steps-Class)
   * [TestRunner Class](#TestRunner-Class)
   
 
@@ -78,7 +80,6 @@ import io.cucumber.java.en.Then;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static Pom.base.Hooks.driver;
@@ -88,15 +89,6 @@ public class Imdb_Steps {
     HomePage homePage;
     OscarPage oscarPage;
     AwardsPage avardsPage;
-
-    TheCircusPage theCircusPage;
-
-    TheJazzSingerPage theJazzSingerPage;
-
-    ResultPage resultPage;
-
-    PhotoPage photoPage;
-
 
     @Given("Browser is open")
     public void browser_is_open() {
@@ -128,6 +120,54 @@ public class Imdb_Steps {
         oscarPage.selectYear();
     }
 
+
+    @And("Click on the IMDB button at the top left of the screen and return to the Home page.")
+    public void click_on_the_imdb_button_at_the_top_left_of_the_screen_and_return_to_the_home_page() throws InterruptedException {
+        homePage.clickImdbButton();
+
+    }
+
+    @And("Types {string} to the search bar")
+    public void types_to_the_search_bar(String string) {
+        homePage.writeMovieName(string);
+        homePage.ClickSearchButton();
+    }
+
+    @Then("Browser is close")
+    public void browser_is_close() {
+        driver.quit();
+    }
+
+
+}
+
+```
+
+## TheCircus_Steps Class
+```java
+package StepDefinitions;
+
+import Pom.Page.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+
+import java.io.IOException;
+
+import static Pom.base.Hooks.driver;
+
+public class TheCircus_Steps {
+
+
+    OscarPage oscarPage;
+
+
+    TheCircusPage theCircusPage;
+
+
+    ResultPage resultPage;
+
+    PhotoPage photoPage;
+
     @And("The Circus is selected under the Honorary Award")
     public void is_selected_under_the_honorary_award() {
         oscarPage.selectMovie();
@@ -140,18 +180,6 @@ public class Imdb_Steps {
         theCircusPage.saveWritersInfoText();
         theCircusPage.saveStarsInfoText();
         System.out.println(" information saved ");
-    }
-
-    @And("Click on the IMDB button at the top left of the screen and return to the Home page.")
-    public void click_on_the_imdb_button_at_the_top_left_of_the_screen_and_return_to_the_home_page() throws InterruptedException {
-        homePage.clickImdbButton();
-
-    }
-
-    @And("Types {string} to the search bar")
-    public void types_to_the_search_bar(String string) {
-        homePage.writeMovieName(string);
-        homePage.ClickSearchButton();
     }
 
     @And("Click on The Circus that appears among the results.")
@@ -185,6 +213,33 @@ public class Imdb_Steps {
         }
 
     }
+}
+
+```
+
+
+## ThejazzSinger_Steps Class
+```java
+package StepDefinitions;
+
+import Pom.Page.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+
+import java.io.IOException;
+
+import static Pom.base.Hooks.driver;
+
+public class TheJazzSinger_Steps {
+
+
+    OscarPage oscarPage;
+
+    TheJazzSingerPage theJazzSingerPage;
+
+    ResultPage resultPage;
+
+    PhotoPage photoPage;
 
     @And("The Jazz Singer is selected under the Honorary Award")
     public void theJazzSinger_is_selected_under_the_honorary_award() {
@@ -227,15 +282,14 @@ public class Imdb_Steps {
         }
 
     }
-    @Then("Browser is close")
-    public void browser_is_close() {
-        driver.quit();
-    }
-
 
 }
 
 ```
+
+
+
+
 
 
 ## TestRunner Class
